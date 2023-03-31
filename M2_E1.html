@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+      <button class="button">Criar Box</div>
+    </div>
+    <script>
+      var btnElement = document.querySelector("button.button");
+
+      btnElement.onclick = function () {
+        var boxElement = document.createElement("div");
+        
+        boxElement.style.width = 100;
+        boxElement.style.height = 100;
+        boxElement.style.backgroundColor = "#f00";
+        document.querySelector("#app").appendChild(boxElement);
+      };
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      //O createElement cria na arvore html um novo elemento, o tipo do elemento é dado pelo html
+      var linkElement = document.createElement("a");
+
+      //O metódo setAtribute
+      linkElement.setAttribute("href", "https://github.com/joao-jordan");
+      linkElement.setAttribute("title", "Github de João Jordan");
+      var textElement = document.createTextNode("Acessar Github");
+      linkElement.appendChild(textElement);
+
+      var containerElement = document.querySelector("#app");
+      containerElement.appendChild(linkElement);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+        <input type="text" name="name">
+        <button onclick="add()">Adicionar</button> 
+    </div>
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+
+      var listElement = document.createElement("ul");
+
+      nomes.forEach(nome => {
+        var itemList = document.createElement("li");
+        itemList.innerHTML = nome;
+        listElement.appendChild(itemList);
+      });
+       var bodyPage = document.body;
+      bodyPage.appendChild(listElement);
+
+
+      function add() {
+        var itemList = document.createElement("li");
+        var inputName = document.getElementsByName("name")[0];
+        itemList.innerHTML = inputName.value;
+        inputName.value = "";
+        listElement.appendChild(itemList);
+      }
+    </script>
+  </body>
+</html>
