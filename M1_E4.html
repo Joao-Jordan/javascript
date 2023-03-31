@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Curso de Javascript</title>
+    </head>
+    <body>
+        <script>
+            var anosEstudados = 5;
+            var expLvl = "Iniciante";
+            function experiencia(anos) {
+                if (anos <= 1) {
+                    expLvl = "Iniciante";
+                } else if(anos > 1 && anos <=3) {
+                    expLvl = "Intermediário";
+                } else if (anos > 3 && anos <= 6){
+                    expLvl = "Avançado";
+                } else {
+                    expLvl = "Jedi Master";
+                }
+            return expLvl;
+            }
+
+            var exp = experiencia(anosEstudados);
+
+            console.log(exp);
+
+        </script>
+    </body>
+</html>

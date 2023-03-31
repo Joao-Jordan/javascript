@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Curso de Javascript</title>
+    </head>
+    <body>
+        <script>
+            var x = 0, y = 0;
+
+            function exibePares(x, y) { 
+                //sabemos que os números pares obtém resto zero ao serem divididos por 2
+
+                for(var i = x; i<= y; i++) {
+                    var div = i%2;
+                    if(div === 0) {
+                        console.log(i);
+                    }
+                }
+            }
+            exibePares(1,3);
+        </script>
+    </body>
+</html>
